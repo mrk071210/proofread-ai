@@ -1,0 +1,87 @@
+.proofread-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .proofread-box {
+        max-height: 860px;
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        padding: 20px;
+        flex: 1 1 auto;
+        > div {
+            margin: 0 10px;
+            border-radius: 50px;
+            background: #f4f6f8;
+            box-shadow:  5px 5px 10px #c6c7c9,
+            -5px -5px 10px #ffffff;
+        }
+        .proofread-left {
+            flex: 1 1 auto;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            .ant-tabs {
+                padding-left: 20px;
+                flex: 0 0 62px;
+            }
+        }
+    }
+    .proofread-upload {
+        flex: 0 0 350px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .ant-upload-wrapper  {
+            flex: 0 0 200px;
+            .ant-upload-drag {
+                border: none;
+            }
+        }
+        > .ant-btn {
+            margin-top: 40px;
+        }
+    }
+    .proofread-checking {
+        padding: 20px;
+        font-size: 14px;
+        line-height: 1.5;
+        flex: 0 0 calc(100% - 65px);
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        .text-title {
+            text-indent: 2em;
+        }
+        .text-result {
+            margin-top: 20px;
+            .text-item {
+                text-indent: 2em;
+                margin-bottom: 10px;
+            }
+        }
+        .highlight{
+            cursor: pointer;
+        }
+        .old-text {
+            text-decoration: line-through;
+            background-color: yellow;
+        }
+        .new-text {
+            background-color: rgba(0, 212, 0, 0.5);
+        }
+    }
+    .proofread-record {
+        
+        .refresh-btn {
+            position: relative;
+            button {
+                position: absolute;
+                right: 40px;
+                top: 10px;
+                z-index: 100;
+            }
+        }
+    }
+}

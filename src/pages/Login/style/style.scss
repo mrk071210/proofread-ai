@@ -1,0 +1,40 @@
+.login-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    .login-box {
+        width: 400px;
+        height: 300px;
+        padding: 20px;
+        border-radius: 50px;
+        background: #f4f6f8;
+        box-shadow:  16px 16px 51px #d2d4d5,
+                    -16px -16px 51px #ffffff;
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            .ant-input-affix-wrapper {
+                background: none;
+                border: none;
+                border-bottom: 1px solid #999;
+                border-radius: 0;
+                input {
+                    background: none;
+                    margin-left: 10px;
+                }
+            }
+            .ant-input-affix-wrapper-focused {
+                // border: none;
+                box-shadow: none !important;
+            }
+            button {
+                width: 100%;
+                border-radius: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+}
